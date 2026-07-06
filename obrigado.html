@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Obrigado! Seu pedido foi confirmado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@400;500;600&display=swap"></noscript>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --azul:#1E3A8A;--azul-claro:#EFF6FF;--azul-medio:#DBEAFE;
+  --amarelo:#FACC15;--preto:#111827;--cinza-texto:#6B7280;--cinza-fundo:#F9FAFB;
+  --branco:#FFFFFF;--verde:#16A34A;--verde-claro:#DCFCE7;--borda:#E5E7EB;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--branco);color:var(--preto);line-height:1.6;overflow-x:hidden;min-height:100vh;display:flex;flex-direction:column}
+h1,h2,h3{font-family:'Montserrat',sans-serif;line-height:1.15}
+img{max-width:100%;height:auto;display:block}
+.container{max-width:680px;margin:0 auto;padding:0 20px;flex:1}
+.topo-confirmado{background:var(--verde);padding:14px 20px;text-align:center;font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(13px,3vw,15px);color:var(--branco);letter-spacing:0.3px}
+.hero{padding:60px 20px 56px;text-align:center}
+.icone-confirmado{width:100px;height:100px;background:var(--verde);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:48px;margin:0 auto 28px;animation:entrar 0.8s ease-out,pulsar-verde 3s infinite 1s}
+@keyframes entrar{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes pulsar-verde{0%,100%{box-shadow:0 0 0 0 rgba(22,163,74,0.4)}50%{box-shadow:0 0 0 16px rgba(22,163,74,0)}}
+.hero h1{font-size:clamp(26px,5vw,42px);font-weight:900;color:var(--preto);max-width:580px;margin:0 auto 12px}
+.hero h1 .destaque{color:var(--azul)}
+.hero-sub{font-size:clamp(15px,2vw,18px);color:var(--cinza-texto);max-width:520px;margin:0 auto 40px;line-height:1.7}
+.card-entrega{background:var(--branco);border:2px solid var(--verde);border-radius:16px;padding:32px 28px;margin-bottom:32px;text-align:center;box-shadow:0 4px 20px rgba(22,163,74,0.08)}
+.card-entrega .entrega-icone{font-size:40px;margin-bottom:16px;display:block}
+.card-entrega h3{font-size:20px;font-weight:900;color:var(--verde);margin-bottom:10px}
+.card-entrega p{font-size:15px;color:var(--cinza-texto);line-height:1.7;max-width:420px;margin:0 auto}
+.passos{display:flex;flex-direction:column;gap:14px;margin-bottom:40px;text-align:left}
+.passo{display:flex;align-items:flex-start;gap:16px;background:var(--branco);border:1px solid var(--borda);border-radius:12px;padding:18px 20px;transition:border-color 0.2s,box-shadow 0.2s}
+.passo:hover{border-color:var(--azul);box-shadow:0 2px 12px rgba(30,58,138,0.06)}
+.passo-numero{flex-shrink:0;width:36px;height:36px;background:var(--azul);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-weight:900;font-size:16px;color:var(--amarelo)}
+.passo-titulo{font-weight:700;color:var(--preto);font-size:15px;margin-bottom:4px}
+.passo-desc{font-size:13px;color:var(--cinza-texto);line-height:1.5}
+.aviso-spam{background:var(--azul-claro);border:1px solid var(--azul-medio);border-radius:10px;padding:16px 20px;text-align:center;margin-bottom:32px}
+.aviso-spam p{font-size:13px;color:var(--cinza-texto);line-height:1.6}
+.aviso-spam strong{color:var(--azul)}
+footer{border-top:1px solid var(--borda);padding:20px;text-align:center;color:var(--cinza-texto);font-size:12px;background:var(--cinza-fundo)}
+footer a{color:var(--azul);text-decoration:underline}
+</style>
+</head>
+<body>
+
+<div class="topo-confirmado">✅ Pedido confirmado com sucesso! Verifique seu email.</div>
+
+<div class="container">
+  <section class="hero">
+    <div class="icone-confirmado">🎉</div>
+    <h1>Parabéns! Seu pedido foi <span class="destaque">confirmado</span></h1>
+    <p class="hero-sub">Muito obrigado pela sua compra! Seu material está sendo preparado e chegará no seu email em instantes.</p>
+
+    <div class="card-entrega">
+      <span class="entrega-icone">📧</span>
+      <h3>Verifique seu Email Agora</h3>
+      <p>O link de acesso ao seu material foi enviado para o email cadastrado na compra. Pode levar até 5 minutos para chegar.</p>
+    </div>
+
+    <div class="passos">
+      <div class="passo">
+        <div class="passo-numero">1</div>
+        <div><p class="passo-titulo">Abra seu email</p><p class="passo-desc">Procure um email com o assunto relacionado ao seu pedido. Pode vir do Mivvo ou do nosso email de entrega.</p></div>
+      </div>
+      <div class="passo">
+        <div class="passo-numero">2</div>
+        <div><p class="passo-titulo">Verifique a caixa de spam</p><p class="passo-desc">Se não encontrar na caixa de entrada, verifique a pasta de spam ou promoções. Às vezes o email vai para lá.</p></div>
+      </div>
+      <div class="passo">
+        <div class="passo-numero">3</div>
+        <div><p class="passo-titulo">Acesse seu material</p><p class="passo-desc">Clique no link do email, faça o download do material e comece a postar hoje mesmo!</p></div>
+      </div>
+      <div class="passo">
+        <div class="passo-numero">4</div>
+        <div><p class="passo-titulo">Dúvidas? Fale com a gente</p><p class="passo-desc">Se tiver qualquer problema com o acesso, entre em contato pelo WhatsApp ou email de suporte.</p></div>
+      </div>
+    </div>
+
+    <div class="aviso-spam">
+      <p>⚠️ <strong>Não recebeu o email?</strong> Verifique sua caixa de <strong>spam</strong> ou <strong>promoções</strong>. Se ainda assim não encontrar, entre em contato com nosso suporte.</p>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <p style="margin-bottom:6px;"><a href="https://trafego6em7.com/politica-de-privacidade" target="_blank" rel="noopener">Política de Privacidade</a> &nbsp;|&nbsp; <a href="https://trafego6em7.com/termos-de-uso/" target="_blank" rel="noopener">Termos de Uso</a></p>
+  <p>© 2026 — Todos os direitos reservados.</p>
+</footer>
+
+
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
+</body>
+</html>
